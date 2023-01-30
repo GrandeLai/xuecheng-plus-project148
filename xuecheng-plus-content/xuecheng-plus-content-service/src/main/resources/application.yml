@@ -6,6 +6,9 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/xcplus_content?serverTimezone=UTC&userUnicode=true&useSSL=false&
     username: root
     password: 123456
+mybatis-plus:
+  mapper-locations:
+    classpath: mapper/*.xml
 # ????????
 logging:
   config:
