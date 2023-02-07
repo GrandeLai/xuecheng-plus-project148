@@ -24,7 +24,7 @@ public interface CourseBaseInfoService  {
      * @author Mr.M
      * @date 2022/9/6 21:44
      */
-    PageResult<CourseBase> queryCourseBaseList(PageParams pageParams, QueryCourseParamsDto queryCourseParamsDto);
+    PageResult<CourseBase> queryCourseBaseList(Long companyId,PageParams pageParams, QueryCourseParamsDto queryCourseParamsDto);
 
     /**
      * @description 添加课程基本信息
