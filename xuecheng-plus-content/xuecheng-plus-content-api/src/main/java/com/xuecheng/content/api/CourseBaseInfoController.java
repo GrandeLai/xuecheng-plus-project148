@@ -32,7 +32,7 @@ public class CourseBaseInfoController {
 
     @ApiOperation("课程查询接口")
     @PostMapping("/course/list")
-    @PreAuthorize("hasAuthority('xc_teachmanager_course_list')")
+//    @PreAuthorize("hasAuthority('xc_teachmanager_course_list')")
     public PageResult<CourseBase> list(PageParams pageParams, @RequestBody QueryCourseParamsDto queryCourseParams){
         //取出用户身份
         SecurityUtil.XcUser user = SecurityUtil.getUser();
